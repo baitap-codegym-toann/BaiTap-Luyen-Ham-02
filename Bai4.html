@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+
+    let input = prompt("???","");
+    if (input === undefined) {
+        alert("chưa nhập gì");
+    }
+
+    function check(input) {
+        if (isNaN(input)){
+            return false;
+        }
+        return true;
+    }
+
+    (check(input)) ? alert("number") : alert("not a number");
+</script>
+</body>
+</html>

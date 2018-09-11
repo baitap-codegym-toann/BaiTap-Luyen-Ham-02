@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    function giaiThua(i) {
+        let final;
+        i=Number(i);
+        if(i < 2){return i}
+        final = i*giaiThua(i-1);
+         return final;
+    }
+    let num = Number(prompt("number?",0));
+    alert(giaiThua(num));
+</script>
+</body>
+</html>

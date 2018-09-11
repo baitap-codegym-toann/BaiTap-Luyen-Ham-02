@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<script>
+    function revert(arr) {
+        let arrOut1 =[];
+        let arrOut2 =[];
+        while (arr.length>1){
+            arrOut1.unshift(arr.pop());
+            arrOut2.push(arr.shift());
+        }
+        return arrOut1.concat(arr.concat(arrOut2));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+function check(string) {
+    let num = string.split(",");
+    let min = num[0];
+    for (let i=0; i<num.length;i++ ){
+        if(min>num[i]){min =num[i];}
+    }
+    return min;
+}
+let input = prompt("nhập dãy số dưới dang a1,a2,a3,...","");
+alert("min is "+check(input));
+</script>
+</body>
+</html>

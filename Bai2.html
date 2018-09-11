@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    function cal(r) {
+        return (Math.floor(Math.PI * r * r)) + ":" + (Math.floor(Math.PI * 2 * r));
+    }
+
+    let r = Number(prompt("number ?", 0));
+    let output = cal(r).split(":");
+alert("chu vi là: "+output[1]+" diện tích là: "+output[0]);
+
+</script>
+</body>
+</html>
